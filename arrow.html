@@ -22,7 +22,7 @@
     </p>
     <p onmouseover="mouseOverFunction(this)">
         Another task: This should be another feature. 
-        I want to click anywhere in this paragraph tag and I want to be able to change the background color to whatever is in this input: <input type="text"/>.
+        I want to click anywhere in this paragraph tag and I want to be able to change the background color to whatever is in this input: <input type="text" id="pp"/>.
     </p>
     <script>
         // const sayHello = name => console.log(`Hello ${name}`);
@@ -45,6 +45,7 @@
         //     setBackgroundColorById("body", "white");
         // }
         document.getElementById("hover-this").onmouseout =()=> setBackgroundColorById("body", "white");
+        // document.getElementById("hover-this").onmouseout =()=> setBackgroundColorById("p", "white");
        
         const getValueFromId=id=>
             document.getElementById(id).value;
@@ -56,7 +57,7 @@
         // function mouseOverFunction(el){
         //     el.style = "background-color: black";
         // }
-        const mouseOverFunction=el=> el.style = "background-color: black";
+        const mouseOverFunction=el=> el.style = "background-color: "+document.getElementById("pp").value;
     </script>
 </body>
 </html>

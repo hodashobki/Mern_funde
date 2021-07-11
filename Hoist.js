@@ -52,9 +52,6 @@ console.log(brendan);
 // }
 
 var food;
-food="chicken";
-console.log(food);
-eat();
 function eat(){
     var food;
     food='half_chicken';
@@ -62,6 +59,10 @@ function eat(){
     var food;
     food="gone";
 }
+food="chicken";
+console.log(food);
+eat();
+
 // prediction: chicken, half_chicken
 // **************************************************
 // -5
@@ -82,7 +83,6 @@ var mean=function(){
     var food;
     food='chicken';
     console.log(food);
-    var food;
     food="fish";
     console.log(food);
 }
@@ -103,49 +103,47 @@ console.log(food);
 
 console.log(genre);
 var genre;
-genre="disco";
-rewind();
 function rewined(){
     var genre;
     genre='rock';
     console.log(genre);
-    var genre;
     genre="r&b";
     console.log(genre);
 }
+genre="disco";
+rewind();
+
 console.log(genre);
 // prediction: disco,rock, r&b,disco
 // **************************************************
 // -7
-dojo = "san jose";
-console.log(dojo);
-learn();
-function learn() {
-    dojo = "seattle";
-    console.log(dojo);
-    var dojo = "burbank";
-    console.log(dojo);
-}
-console.log(dojo);
+// dojo = "san jose";
+// console.log(dojo);
+// learn();
+// function learn() {
+//     dojo = "seattle";
+//     console.log(dojo);
+//     var dojo = "burbank";
+//     console.log(dojo);
+// }
+// console.log(dojo);
 
 var dojo;
-dojo="san jose";
-console.log(dojo);
-learn();
 function learn(){
     var dojo;
     dojo="seattle";
     console.log(dojo);
-    var dojo;
     dojo="burbank";
     console.log(dojo);
 }
+dojo="san jose";
+console.log(dojo);
+learn();
+
 console.log(dojo);
 // prediction :san jose,seattle,burbank,san jose.
 // ******************************************************************************
 // -8
-console.log(makeDojo("Chicago", 65));
-console.log(makeDojo("Berkeley", 0));
 function makeDojo(name, students){
     const dojo = {};
     dojo.name = name;
@@ -158,6 +156,9 @@ function makeDojo(name, students){
     }
     return dojo;
 }
+console.log(makeDojo("Chicago", 65));
+console.log(makeDojo("Berkeley", 0));
+
 // prediction:{name: "Chicago", students: 65, hiring: true}
 
 

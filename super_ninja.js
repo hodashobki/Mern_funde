@@ -22,11 +22,11 @@ ninja.showStats();
 ninja.drinkSake();
 // Sensei Class
 class Sensei extends Ninja{
-    constructor(name){
-        super(name,200,10,10)
-        // this.health=200;
-        // this.speed=10;
-        // this.strength=10;
+    constructor(name,health,speed,strength){
+        super(name)
+        this.health=200;
+        this.speed=10;
+        this.strength=10;
         this.wisdom=10;
     }
     speakWisdom(){
